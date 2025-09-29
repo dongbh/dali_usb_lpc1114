@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>  // strtoul
-#include <stdint.h>  // uintXX_t
-#include <stdbool.h> // for bool
-#include <limits.h>  // UINT_MAX
+#include <stdlib.h>   // strtoul
+#include <stdint.h>   // uintXX_t
+#include <inttypes.h> // PRIu32..
+#include <stdbool.h>  // for bool
+#include <limits.h>   // UINT_MAX
 
 #include "FreeRTOS.h" // tasks and queues
 #include "task.h"
@@ -60,7 +61,7 @@ struct _serial {
 
 void serial_print_head(void)
 {
-    printf("DALI USB interface - SevenLab 2024\r\n");
+    printf("DALI USB interface - SevenLab 2025\r\n");
     printf("Version %d.%d.%d \r\n", MAJOR_VERSION_SOFTWARE, MINOR_VERSION_SOFTWARE, BUGFIX_VERSION_SOFTWARE);
     printf("\r\n");
 }
